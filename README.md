@@ -15,3 +15,12 @@
   | PR       | Status             |
   |-----------------------|-------------------|
   | [#2548](https://github.com/nexB/scancode-toolkit/pull/2548/commits/f1b8085b8a097fde2ce5c5bd02672efa3a07aa40) | ![Merged](https://i.imgur.com/YnDnRzm.jpg) |
+  
+  #### Reporting known and Unknown licenses separately
+- We considered having a separate section for of scan results to report 'unknown licenses' separately and not mixed with main license detection results. But after
+  implementing a separate section for unknown ones ,it doesn't seem to be good idea to have currently. 
+  
+  | PR       | Status             |
+  |-----------------------|-------------------|
+  | [#2578](https://github.com/nexB/scancode-toolkit/pull/2578) | ```CLOSED ```|
+  
