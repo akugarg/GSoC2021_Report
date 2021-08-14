@@ -24,3 +24,6 @@
   |-----------------------|-------------------|
   | [#2578](https://github.com/nexB/scancode-toolkit/pull/2578) | ```CLOSED ```|
   
+  #### Follow License References to another file
+- Some license references such as "see license in file LICENSE.txt" e.g. mentions to look for license details in another file are reported as unknown license references and we could instead follow the referenced file to find what was detected there. The approach was to use already contained attribute ```refrenced_filenmes``` in license RULE data files.
+  
