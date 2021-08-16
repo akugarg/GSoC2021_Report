@@ -14,7 +14,7 @@
 
   | PR       | Status             |
   |-----------------------|-------------------|
-  | [#2548](https://github.com/nexB/scancode-toolkit/pull/2548/commits/f1b8085b8a097fde2ce5c5bd02672efa3a07aa40) | ![Merged](https://i.imgur.com/YnDnRzm.jpg) |
+  | [#2548](https://github.com/nexB/scancode-toolkit/pull/2548/commits/f1b8085b8a097fde2ce5c5bd02672efa3a07aa40) | ```MERGED```|
   
   #### Reporting known and Unknown licenses separately
 - We considered having a separate section for of scan results to report 'unknown licenses' separately and not mixed with main license detection results. But after
@@ -25,5 +25,23 @@
   | [#2578](https://github.com/nexB/scancode-toolkit/pull/2578) | ```CLOSED ```|
   
   #### Follow License References to another file
-- Some license references such as "see license in file LICENSE.txt" e.g. mentions to look for license details in another file are reported as unknown license references and we could instead follow the referenced file to find what was detected there. The approach was to use already contained attribute ```refrenced_filenmes``` in license RULE data files.
+- Some license references such as "see license in file LICENSE.txt" e.g. mentions to look for license details in another file are reported as unknown license references and we could instead follow the referenced file to find what was detected there. The approach was to use already contained attribute ```refrenced_filenmes``` in license RULE data files. Since this was a ```process_codebase``` step in scan plugin , it was needed that our API function should return ```refrenced_filenmes``` to keep track of these files corresponding to licenses detected. This was tracked in - 
+
+  | PR       | Status             |
+  |-----------------------|-------------------|
+  | [#2632](https://github.com/nexB/scancode-toolkit/pull/2632) |```MERGED```|
+  
+-  The ```process_codebase``` step is tracked in - 
+ 
+   | PR       | Status             |
+   |-----------------------|-------------------|
+   | [#2616](https://github.com/nexB/scancode-toolkit/pull/2616) | ```OPEN```|
+ 
+ #### Improve license detection of Unknown Licenses
+- The approach was to use index of n-grams for detecting unknowns besides having our actual detection of "unknown" license rules. Firstly matches were filtered after running our normal procedure of license detection and the remaining spans are run through a automaton index containing n-grams from all regular license texts and rules. This is tracked in - 
+
+   | PR       | Status             |
+   |-----------------------|-------------------|
+   | [#2592](https://github.com/nexB/scancode-toolkit/pull/2592) | ```OPEN```|
+ 
   
