@@ -37,11 +37,18 @@
    |-----------------------|-------------------|
    | [#2616](https://github.com/nexB/scancode-toolkit/pull/2616) | ```OPEN```|
  
- #### Improve license detection of Unknown Licenses
+#### Improve license detection of Unknown Licenses
 - The approach was to use index of n-grams for detecting unknowns besides having our actual detection of "unknown" license rules. Firstly matches were filtered after running our normal procedure of license detection and the remaining spans are run through a automaton index containing n-grams from all regular license texts and rules. This is tracked in - 
 
    | PR       | Status             |
    |-----------------------|-------------------|
    | [#2592](https://github.com/nexB/scancode-toolkit/pull/2592) | ```OPEN```|
+ 
+#### Addition of some new Licenses
+- There were some licenses that were not present in Scancode-toolkit as for now. They have been added now. 
+
+   | PR       | Status             |
+   |-----------------------|-------------------|
+   | [#2625](https://github.com/nexB/scancode-toolkit/pull/2625) | ```OPEN```|
  
   
