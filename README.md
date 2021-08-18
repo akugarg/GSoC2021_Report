@@ -51,4 +51,6 @@
    |-----------------------|-------------------|
    | [#2625](https://github.com/nexB/scancode-toolkit/pull/2625) | ```OPEN```|
  
-  
+ 
+- I’ve had a wonderful summer during these 10 weeks journey and have learned plenty of things. I am thankful to Google and Aboutcode for giving me this opportunity   to work with such an amazing community. I am fortunate to have mentors `Philippe Ombredanne <https://github.com/pombredanne>`_ and `Ayan Sinha Mahapatra <https://github.com/AyanSinhaMahapatra>`_ who helped me a lot throughout my GSoC project and provided constant support.
+
