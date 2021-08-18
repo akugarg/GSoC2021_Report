@@ -4,7 +4,7 @@
 ##### [GSoC PROPOSAL](https://docs.google.com/document/d/1Dp0Hgk38RIMwITTiS-kqfikpkHRi2rjtkotA9CLw8j0/edit?usp=sharing)
 ## Project : Detect Unknown Licenses and Indirect License References in Scancode 
 #### [Scancode-Toolkit](https://github.com/nexB/scancode-toolkit)
-#### Project Board: https://github.com/nexB/scancode-toolkit/projects/9
+#### [Project Link](https://summerofcode.withgoogle.com/projects/#6116612073062400)
 ### Description - 
 - The main motive of this project was to improve license detection of unknown licenses and follow references to indirect license references in Scancode-TK
   #### Improvement in the License Data Model Definition
